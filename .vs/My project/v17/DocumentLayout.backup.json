@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rapha\\My project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|c:\\users\\rapha\\my project\\assets\\scripts\\songcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\songcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\rapha\\My project\\assets\\scripts\\notecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\notecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\rapha\\My project\\assets\\scripts\\audiopeer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audiopeer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\rapha\\My project\\assets\\scripts\\paramcube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\paramcube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\rapha\\My project\\assets\\scripts\\intantiatecubes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\intantiatecubes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rapha\\My project\\Assets\\onTriggerBlinkMaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\onTriggerBlinkMaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SongController.cs",
+              "DocumentMoniker": "C:\\Users\\rapha\\My project\\Assets\\Scripts\\SongController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SongController.cs",
+              "ToolTip": "C:\\Users\\rapha\\My project\\Assets\\Scripts\\SongController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SongController.cs",
+              "ViewState": "AgIAAOAAAAAAAAAAAAAswO0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T21:36:38.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NoteController.cs",
+              "DocumentMoniker": "C:\\Users\\rapha\\My project\\Assets\\Scripts\\NoteController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\NoteController.cs",
+              "ToolTip": "C:\\Users\\rapha\\My project\\Assets\\Scripts\\NoteController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\NoteController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T21:35:57.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "onTriggerBlinkMaterial.cs",
+              "DocumentMoniker": "C:\\Users\\rapha\\My project\\Assets\\onTriggerBlinkMaterial.cs",
+              "RelativeDocumentMoniker": "Assets\\onTriggerBlinkMaterial.cs",
+              "ToolTip": "C:\\Users\\rapha\\My project\\Assets\\onTriggerBlinkMaterial.cs",
+              "RelativeToolTip": "Assets\\onTriggerBlinkMaterial.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T13:54:39.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "paramCube.cs",
+              "DocumentMoniker": "C:\\Users\\rapha\\My project\\Assets\\Scripts\\paramCube.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\paramCube.cs",
+              "ToolTip": "C:\\Users\\rapha\\My project\\Assets\\Scripts\\paramCube.cs",
+              "RelativeToolTip": "Assets\\Scripts\\paramCube.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T21:34:20.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "intantiateCubes.cs",
+              "DocumentMoniker": "C:\\Users\\rapha\\My project\\Assets\\Scripts\\intantiateCubes.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\intantiateCubes.cs",
+              "ToolTip": "C:\\Users\\rapha\\My project\\Assets\\Scripts\\intantiateCubes.cs",
+              "RelativeToolTip": "Assets\\Scripts\\intantiateCubes.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCIAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T13:33:52.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AudioPeer.cs",
+              "DocumentMoniker": "C:\\Users\\rapha\\My project\\Assets\\Scripts\\AudioPeer.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AudioPeer.cs",
+              "ToolTip": "C:\\Users\\rapha\\My project\\Assets\\Scripts\\AudioPeer.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AudioPeer.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwCsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T12:44:00.874Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
