@@ -27,10 +27,10 @@ public class despawnPosition : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Trigger entered by: " + other.gameObject.name);
+        //Debug.Log("Trigger entered by: " + other.gameObject.name);
         if (other.CompareTag("Note"))
         {
-            Debug.Log("Missed Note");
+            //Debug.Log("Missed Note");
             // Destroy the object
             GameManager.missNote();
             Destroy(other.gameObject);

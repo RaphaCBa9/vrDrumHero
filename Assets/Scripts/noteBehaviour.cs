@@ -21,13 +21,13 @@ public class noteBehaviour : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Drum"))
         {
-            Debug.Log("Nota entrou na área de acerto");
+            //Debug.Log("Nota entrou na área de acerto");
             canHit = true;
 
             if (other.gameObject.GetComponent<noteEvaluation>().hasHit == true)
             {
                 Destroy(gameObject);
-                Debug.Log("Nota acertada!");    
+                //Debug.Log("Nota acertada!");    
                 GameManager.hitNote();
             }
 
@@ -38,7 +38,7 @@ public class noteBehaviour : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Drum"))
         {
-            Debug.Log("Nota saiu da área de acerto");
+            //Debug.Log("Nota saiu da área de acerto");
 
             canHit = false;
         }

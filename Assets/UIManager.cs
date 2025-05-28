@@ -17,8 +17,8 @@ public class UIManager : MonoBehaviour
         scoreTxt.text = GameManager.score.ToString();
         if (GameManager.gameOver)
         {
-            Debug.Log(GameManager.endOfSong);
-            Debug.Log(GameManager.life);
+            //Debug.Log(GameManager.endOfSong);
+            //Debug.Log(GameManager.life);
             stm.GoToSceneAsync(0);
             Destroy(gameObject);
         }

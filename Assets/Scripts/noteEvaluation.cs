@@ -29,7 +29,7 @@ public class noteEvaluation : MonoBehaviour
         }
         else
         {
-            Debug.Log("Collider found on the GameObject.");
+            //Debug.Log("Collider found on the GameObject.");
         }
         audioSource = GetComponent<AudioSource>();
          
@@ -39,7 +39,7 @@ public class noteEvaluation : MonoBehaviour
         }
         else
         {
-            Debug.Log("AudioSource found on the GameObject.");
+            //Debug.Log("AudioSource found on the GameObject.");
         }
 
         center = triggerZone.bounds.center;
@@ -65,7 +65,7 @@ public class noteEvaluation : MonoBehaviour
     {
         if (other.gameObject.tag == "Note")
         {
-            Debug.Log("Note entered the hit area");
+            //Debug.Log("Note entered the hit area");
             NoteInZone = true;
         }
         if (other.gameObject.tag == "Drumstick")
@@ -74,7 +74,7 @@ public class noteEvaluation : MonoBehaviour
 
             if (!NoteInZone)
             {
-                Debug.Log("Drumstick missed the note");
+                //Debug.Log("Drumstick missed the note");
                 audioSource.Play();
             }
             
@@ -84,7 +84,7 @@ public class noteEvaluation : MonoBehaviour
     {
         if (other.gameObject.tag == "Note")
         {
-            Debug.Log("Note exited the hit area");
+            //Debug.Log("Note exited the hit area");
             NoteInZone = false;
         }
         

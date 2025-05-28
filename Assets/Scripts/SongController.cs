@@ -58,7 +58,7 @@ public class SongController : MonoBehaviour
     {
         notes = new List<Note>();
         audioSource = GetComponent<AudioSource>();
-        //debug.Log($"Audio Source: {audioSource}");
+        ////Debug.Log($"Audio Source: {audioSource}");
 
 
         // Chart File - Get Song Data //
@@ -75,14 +75,14 @@ public class SongController : MonoBehaviour
     {
 
         songStartTime = Time.time - 9.5f;  // Record the start time of the song
-        //debug.Log($"Song Start Time: {songStartTime}");
+        ////Debug.Log($"Song Start Time: {songStartTime}");
 
 
         foreach (var note in notes)
         {
             float noteTime = TicksToSeconds(note.tick);  // Convert tick to time
             float waitTime = noteTime - (Time.time - songStartTime);  // Calculate how long to wait
-            //Debug.Log($"Note Time: {noteTime}, Wait Time: {waitTime}");
+            ////Debug.Log($"Note Time: {noteTime}, Wait Time: {waitTime}");
 
             if (waitTime > 0)
             {
@@ -106,7 +106,7 @@ public class SongController : MonoBehaviour
     void SpawnNote(Note note)
     {
         // Implement the logic to spawn a note in the game
-        // //debug.Log($"Spawning note {note.noteType} at tick {note.tick}");
+        // ////Debug.Log($"Spawning note {note.noteType} at tick {note.tick}");
 
         GameObject newNote;
         int t = 0;
@@ -129,7 +129,7 @@ public class SongController : MonoBehaviour
                 t = 4;
                 break;
         }
-        //debug.Log($"Spawning note {note.noteType} at tick {note.tick} - {note.noteDurration}");
+        ////Debug.Log($"Spawning note {note.noteType} at tick {note.tick} - {note.noteDurration}");
         newNote = Instantiate(noteObj, notePos[t].position, notePos[t].rotation);
         newNote.GetComponent<Renderer>().material = noteMaterials[t];
     }
@@ -138,30 +138,30 @@ public class SongController : MonoBehaviour
 
     void LoadChartData()
     {
-        //debug.Log($"Loading chart data from: {songFolder}");
+        ////Debug.Log($"Loading chart data from: {songFolder}");
 
         string chartPath = Path.Combine(songFolder, "notes.chart");
         if (File.Exists(chartPath))
         {
-            //debug.Log($"Chart file found at: {chartPath}");
+            ////Debug.Log($"Chart file found at: {chartPath}");
 
             string[] lines = File.ReadAllLines(chartPath);
 
-            //debug.Log($"Lines: {lines.Length}");
+            ////Debug.Log($"Lines: {lines.Length}");
 
             bool isInSongSection = false;
             /*
             foreach (var line in lines)
             {
-                Debug.Log($"Line: {line}");
+                //Debug.Log($"Line: {line}");
                 if (line.Trim() == "[Song]")
                 {
                     isInSongSection = true;
-                    Debug.Log("Song section found");
+                    //Debug.Log("Song section found");
                 }
                 else if (line.Trim().StartsWith("[") && isInSongSection)
                 {
-                    Debug.Log("End of song section found");
+                    //Debug.Log("End of song section found");
                     // We've reached the end of the song metadata section
                     break;
                 }
@@ -178,15 +178,15 @@ public class SongController : MonoBehaviour
                         year.text = line.Split('=')[1].Trim().Trim('"').Trim(',').Trim(' ');
                 }
             }
-            Debug.Log($"Song Name: {songName.text}");
-            Debug.Log($"Artist: {artist.text}");
-            Debug.Log($"Charter: {charter.text}");
-            Debug.Log($"Year: {year.text}");
+            //Debug.Log($"Song Name: {songName.text}");
+            //Debug.Log($"Artist: {artist.text}");
+            //Debug.Log($"Charter: {charter.text}");
+            //Debug.Log($"Year: {year.text}");
             */
 
             // Song delay timer //
 
-            //debug.Log($"Loading delay from: {songFolder}");
+            ////Debug.Log($"Loading delay from: {songFolder}");
             lines = File.ReadAllLines(chartPath);
             isInSongSection = false;
             foreach (var line in lines)
@@ -195,7 +195,7 @@ public class SongController : MonoBehaviour
                 {
 
                     isInSongSection = true;
-                    //debug.Log("SyncTrack found");
+                    ////Debug.Log("SyncTrack found");
                 }
                 else if (line.Trim().StartsWith("[") && isInSongSection)
                 {
@@ -233,11 +233,11 @@ public class SongController : MonoBehaviour
                 {
                     if (line.StartsWith("  0 = B "))
                     {
-                        Debug.Log($"BPM found: {line}");
+                        //Debug.Log($"BPM found: {line}");
                         string _ = line.Split("  0 = B ")[1].Trim(' ').Substring(0, 3);
                         currentBPM = float.Parse(_);
 
-                        Debug.Log($"Current BPM: {currentBPM}");
+                        //Debug.Log($"Current BPM: {currentBPM}");
                     }
 
                 }
@@ -251,7 +251,7 @@ public class SongController : MonoBehaviour
 
     void LoadNotes()
     {
-        //debug.Log($"Loading notes from: {songFolder}");
+        ////Debug.Log($"Loading notes from: {songFolder}");
         string chartPath = Path.Combine(songFolder, "notes.chart");
         if (File.Exists(chartPath))
         {
@@ -263,7 +263,7 @@ public class SongController : MonoBehaviour
             {
                 if (line.Trim() == "[EasyDrums]")
                 {
-                    Debug.Log("ExpertDrums section found");
+                    //Debug.Log("ExpertDrums section found");
                     isNoteSection = true;
                     continue;
                 }

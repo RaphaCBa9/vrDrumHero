@@ -29,6 +29,7 @@ public static class GameManager
             return;
         }
         life++;
+        score += 10;
     }
 
     public static void missNote()

@@ -21,20 +21,20 @@ public class onTriggerBlinkMaterial : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Acertei o trigger");
+        //Debug.Log("Acertei o trigger");
         if (other.gameObject.CompareTag("Drumstick"))
         {
-            //Debug.Log("Reconheci a tag");
+            ////Debug.Log("Reconheci a tag");
 
             m = drumSkin.GetComponent<Renderer>().material;
 
             if (m == null)
             {
-                //Debug.Log("Material não encontrado");
+                ////Debug.Log("Material não encontrado");
             }
             else
             {
-                //Debug.Log("Material encontrado");
+                ////Debug.Log("Material encontrado");
             }
             m.SetFloat("_TimeStart", Time.time);
         }
