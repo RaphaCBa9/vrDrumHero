@@ -30,8 +30,9 @@ public class despawnPosition : MonoBehaviour
         Debug.Log("Trigger entered by: " + other.gameObject.name);
         if (other.CompareTag("Note"))
         {
-            Debug.Log("Note object entered the trigger zone.");
+            Debug.Log("Missed Note");
             // Destroy the object
+            GameManager.missNote();
             Destroy(other.gameObject);
         }
     }

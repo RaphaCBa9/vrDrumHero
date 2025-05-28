@@ -11,6 +11,11 @@ public class intantiateCubes : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        int inverted = -1;
+        if (this.gameObject.tag == "inverted")
+        {
+            inverted = 1;
+        }
         for (int i = 0; i < cubes.Length; i++)
         {
             GameObject cubeInstance = (GameObject)Instantiate(cubePrefab);
@@ -18,11 +23,12 @@ public class intantiateCubes : MonoBehaviour
             cubeInstance.transform.parent = this.transform;
             cubeInstance.name = "Cube" + i;
 
-            this.transform.eulerAngles = new Vector3(0, -0.703125f * i, 0);
+            this.transform.eulerAngles = new Vector3(0, -0.703125f * i * inverted, 0);
             cubeInstance.transform.position = Vector3.forward * 10;
 
             cubes[i] = cubeInstance;
         }
+        
     }
 
     // Update is called once per frame

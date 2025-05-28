@@ -27,7 +27,8 @@ public class noteBehaviour : MonoBehaviour
             if (other.gameObject.GetComponent<noteEvaluation>().hasHit == true)
             {
                 Destroy(gameObject);
-                Debug.Log("Nota acertada!");
+                Debug.Log("Nota acertada!");    
+                GameManager.hitNote();
             }
 
         }

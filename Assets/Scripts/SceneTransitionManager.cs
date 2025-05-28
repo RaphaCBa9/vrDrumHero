@@ -48,7 +48,7 @@ public class SceneTransitionManager : MonoBehaviour
             timer += Time.deltaTime;
             yield return null;
         }
-
+        GameManager.Init();
         operation.allowSceneActivation = true;
     }
 }

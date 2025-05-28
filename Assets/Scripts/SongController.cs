@@ -74,10 +74,9 @@ public class SongController : MonoBehaviour
     IEnumerator PlaySong()
     {
 
-        songStartTime = Time.time-9.5f;  // Record the start time of the song
+        songStartTime = Time.time - 9.5f;  // Record the start time of the song
         //debug.Log($"Song Start Time: {songStartTime}");
 
-        float travelTime = getTravelTime();
 
         foreach (var note in notes)
         {
@@ -92,6 +91,7 @@ public class SongController : MonoBehaviour
 
             SpawnNote(note);  // Spawn the note
         }
+        GameManager.endGame();
     }
 
 
@@ -235,7 +235,7 @@ public class SongController : MonoBehaviour
                     {
                         Debug.Log($"BPM found: {line}");
                         string _ = line.Split("  0 = B ")[1].Trim(' ').Substring(0, 3);
-                        currentBPM = float.Parse(_)+1;
+                        currentBPM = float.Parse(_);
 
                         Debug.Log($"Current BPM: {currentBPM}");
                     }

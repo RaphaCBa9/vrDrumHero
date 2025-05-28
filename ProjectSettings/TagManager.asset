@@ -8,6 +8,7 @@ TagManager:
   - Drumstick
   - Drum
   - Note
+  - inverted
   layers:
   - Default
   - TransparentFX
